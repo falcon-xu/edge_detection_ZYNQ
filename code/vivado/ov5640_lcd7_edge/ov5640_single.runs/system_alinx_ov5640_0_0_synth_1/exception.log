@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file E:\vivado\vivado_lab\ZYNQ\ov5640_and_lcd7_display\ov5640_single.runs\system_alinx_ov5640_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

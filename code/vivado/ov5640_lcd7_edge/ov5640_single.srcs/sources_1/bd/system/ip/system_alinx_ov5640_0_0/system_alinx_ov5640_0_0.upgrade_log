@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Tue Nov 14 10:14:04 2017
+| Host         : Mei-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_alinx_ov5640_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_alinx_ov5640_0_0 (www.alinx.com.cn:user:alinx_ov5640_RGB565:2.1 (Rev. 1)) to current project options.
+

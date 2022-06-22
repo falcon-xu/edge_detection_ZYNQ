@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="edge_detector.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_edge_detector_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_edge_detector_group">
+      <obj_property name="label">AESL_inst_edge_detector</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/Block_proc232_U0_activity">
+         <obj_property name="ElementShortName">Block_proc232_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_proc232_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/AXIvideo2Mat_U0_activity">
+         <obj_property name="ElementShortName">AXIvideo2Mat_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">AXIvideo2Mat_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/CvtColor_U0_activity">
+         <obj_property name="ElementShortName">CvtColor_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">CvtColor_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/Duplicate_U0_activity">
+         <obj_property name="ElementShortName">Duplicate_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Duplicate_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/Filter2D102_U0_activity">
+         <obj_property name="ElementShortName">Filter2D102_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Filter2D102_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/Filter2D_U0_activity">
+         <obj_property name="ElementShortName">Filter2D_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Filter2D_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/AddWeighted_U0_activity">
+         <obj_property name="ElementShortName">AddWeighted_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">AddWeighted_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/thresholding_U0_activity">
+         <obj_property name="ElementShortName">thresholding_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">thresholding_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/CvtColor_1_U0_activity">
+         <obj_property name="ElementShortName">CvtColor_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">CvtColor_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/Mat2AXIvideo_U0_activity">
+         <obj_property name="ElementShortName">Mat2AXIvideo_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Mat2AXIvideo_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="Block_proc232_U0_group">
+         <obj_property name="label">Block_proc232_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Block_proc232_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc232_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc232_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="srcImg_rows_V_out_group">
+               <obj_property name="label">srcImg_rows_V_out(srcImg_rows_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_rows_V_out_blk_n">
+                  <obj_property name="ElementShortName">srcImg_rows_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">srcImg_rows_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_rows_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_rows_V_out_full_n">
+                  <obj_property name="ElementShortName">srcImg_rows_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">srcImg_rows_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_rows_V_out_write">
+                  <obj_property name="ElementShortName">srcImg_rows_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">srcImg_rows_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="srcImg_cols_V_out_group">
+               <obj_property name="label">srcImg_cols_V_out(srcImg_cols_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_cols_V_out_blk_n">
+                  <obj_property name="ElementShortName">srcImg_cols_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">srcImg_cols_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_cols_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_cols_V_out_full_n">
+                  <obj_property name="ElementShortName">srcImg_cols_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">srcImg_cols_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/srcImg_cols_V_out_write">
+                  <obj_property name="ElementShortName">srcImg_cols_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">srcImg_cols_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="threshold_out_group">
+               <obj_property name="label">threshold_out(threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/threshold_out_blk_n">
+                  <obj_property name="ElementShortName">threshold_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">threshold_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/threshold_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/threshold_out_full_n">
+                  <obj_property name="ElementShortName">threshold_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">threshold_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Block_proc232_U0/threshold_out_write">
+                  <obj_property name="ElementShortName">threshold_out_write</obj_property>
+                  <obj_property name="ObjectShortName">threshold_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="AXIvideo2Mat_U0_group">
+         <obj_property name="label">AXIvideo2Mat_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="AXIvideo2Mat_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_rows_V_group">
+               <obj_property name="label">img_rows_V(srcImg_rows_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_blk_n">
+                  <obj_property name="ElementShortName">img_rows_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_dout">
+                  <obj_property name="ElementShortName">img_rows_V_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_empty_n">
+                  <obj_property name="ElementShortName">img_rows_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_read">
+                  <obj_property name="ElementShortName">img_rows_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_cols_V_group">
+               <obj_property name="label">img_cols_V(srcImg_cols_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_blk_n">
+                  <obj_property name="ElementShortName">img_cols_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_dout">
+                  <obj_property name="ElementShortName">img_cols_V_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_empty_n">
+                  <obj_property name="ElementShortName">img_cols_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_read">
+                  <obj_property name="ElementShortName">img_cols_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXIvideo2Mat_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXIvideo2Mat_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_data_stream_0_V_group">
+               <obj_property name="label">img_data_stream_0_V(srcImg_data_stream_0_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_0_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_0_V_full_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_0_V_write">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_1_V_group">
+               <obj_property name="label">img_data_stream_1_V(srcImg_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_1_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_1_V_full_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_1_V_write">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_2_V_group">
+               <obj_property name="label">img_data_stream_2_V(srcImg_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_2_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_2_V_full_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_data_stream_2_V_write">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_rows_V_out_group">
+               <obj_property name="label">img_rows_V_out(srcImg_rows_V_c20_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_out_blk_n">
+                  <obj_property name="ElementShortName">img_rows_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_out_full_n">
+                  <obj_property name="ElementShortName">img_rows_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_rows_V_out_write">
+                  <obj_property name="ElementShortName">img_rows_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_cols_V_out_group">
+               <obj_property name="label">img_cols_V_out(srcImg_cols_V_c21_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_out_blk_n">
+                  <obj_property name="ElementShortName">img_cols_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_out_full_n">
+                  <obj_property name="ElementShortName">img_cols_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AXIvideo2Mat_U0/img_cols_V_out_write">
+                  <obj_property name="ElementShortName">img_cols_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="CvtColor_U0_group">
+         <obj_property name="label">CvtColor_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="CvtColor_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_src_rows_V_group">
+               <obj_property name="label">p_src_rows_V(srcImg_rows_V_c20_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_rows_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_rows_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_rows_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_rows_V_dout">
+                  <obj_property name="ElementShortName">p_src_rows_V_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_rows_V_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_rows_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_rows_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_rows_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_rows_V_read">
+                  <obj_property name="ElementShortName">p_src_rows_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_rows_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_src_cols_V_group">
+               <obj_property name="label">p_src_cols_V(srcImg_cols_V_c21_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_cols_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_cols_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_cols_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_cols_V_dout">
+                  <obj_property name="ElementShortName">p_src_cols_V_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_cols_V_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_cols_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_cols_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_cols_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_cols_V_read">
+                  <obj_property name="ElementShortName">p_src_cols_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_cols_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_src_data_stream_0_V_group">
+               <obj_property name="label">p_src_data_stream_0_V(srcImg_data_stream_0_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_0_V_dout">
+                  <obj_property name="ElementShortName">p_src_data_stream_0_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_0_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_0_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_0_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_0_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_0_V_read">
+                  <obj_property name="ElementShortName">p_src_data_stream_0_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_0_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_src_data_stream_1_V_group">
+               <obj_property name="label">p_src_data_stream_1_V(srcImg_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_1_V_dout">
+                  <obj_property name="ElementShortName">p_src_data_stream_1_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_1_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_1_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_1_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_1_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_1_V_read">
+                  <obj_property name="ElementShortName">p_src_data_stream_1_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_1_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_src_data_stream_2_V_group">
+               <obj_property name="label">p_src_data_stream_2_V(srcImg_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_2_V_dout">
+                  <obj_property name="ElementShortName">p_src_data_stream_2_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_2_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_2_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_2_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_2_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_src_data_stream_2_V_read">
+                  <obj_property name="ElementShortName">p_src_data_stream_2_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_2_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="CvtColor_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="CvtColor_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_dst_data_stream_V_group">
+               <obj_property name="label">p_dst_data_stream_V(grayImg_data_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_dst_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_dst_data_stream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_dst_data_stream_V_full_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_U0/p_dst_data_stream_V_write">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Duplicate_U0_group">
+         <obj_property name="label">Duplicate_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Duplicate_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="src_data_stream_V_group">
+               <obj_property name="label">src_data_stream_V(grayImg_data_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/src_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/src_data_stream_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/src_data_stream_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/src_data_stream_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Duplicate_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Duplicate_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dst1_data_stream_V_group">
+               <obj_property name="label">dst1_data_stream_V(split0_data_stream_0_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst1_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">dst1_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst1_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst1_data_stream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst1_data_stream_V_full_n">
+                  <obj_property name="ElementShortName">dst1_data_stream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst1_data_stream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst1_data_stream_V_write">
+                  <obj_property name="ElementShortName">dst1_data_stream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst1_data_stream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dst2_data_stream_V_group">
+               <obj_property name="label">dst2_data_stream_V(split1_data_stream_0_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst2_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">dst2_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst2_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst2_data_stream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst2_data_stream_V_full_n">
+                  <obj_property name="ElementShortName">dst2_data_stream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst2_data_stream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Duplicate_U0/dst2_data_stream_V_write">
+                  <obj_property name="ElementShortName">dst2_data_stream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst2_data_stream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Filter2D102_U0_group">
+         <obj_property name="label">Filter2D102_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Filter2D102_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_src_data_stream_V_group">
+               <obj_property name="label">p_src_data_stream_V(split0_data_stream_0_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_src_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_src_data_stream_V_dout">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_src_data_stream_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_src_data_stream_V_read">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Filter2D102_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Filter2D102_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_dst_data_stream_V_group">
+               <obj_property name="label">p_dst_data_stream_V(sobelImg_x_data_stre_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_dst_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_dst_data_stream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_dst_data_stream_V_full_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D102_U0/p_dst_data_stream_V_write">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Filter2D_U0_group">
+         <obj_property name="label">Filter2D_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Filter2D_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_src_data_stream_V_group">
+               <obj_property name="label">p_src_data_stream_V(split1_data_stream_0_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_src_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_src_data_stream_V_dout">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_src_data_stream_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_src_data_stream_V_read">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Filter2D_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Filter2D_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_dst_data_stream_V_group">
+               <obj_property name="label">p_dst_data_stream_V(sobelImg_y_data_stre_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_dst_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_dst_data_stream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_dst_data_stream_V_full_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Filter2D_U0/p_dst_data_stream_V_write">
+                  <obj_property name="ElementShortName">p_dst_data_stream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="AddWeighted_U0_group">
+         <obj_property name="label">AddWeighted_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="AddWeighted_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="src1_data_stream_V_group">
+               <obj_property name="label">src1_data_stream_V(sobelImg_x_data_stre_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src1_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">src1_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src1_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src1_data_stream_V_dout">
+                  <obj_property name="ElementShortName">src1_data_stream_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">src1_data_stream_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src1_data_stream_V_empty_n">
+                  <obj_property name="ElementShortName">src1_data_stream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src1_data_stream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src1_data_stream_V_read">
+                  <obj_property name="ElementShortName">src1_data_stream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src1_data_stream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="src2_data_stream_V_group">
+               <obj_property name="label">src2_data_stream_V(sobelImg_y_data_stre_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src2_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">src2_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src2_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src2_data_stream_V_dout">
+                  <obj_property name="ElementShortName">src2_data_stream_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">src2_data_stream_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src2_data_stream_V_empty_n">
+                  <obj_property name="ElementShortName">src2_data_stream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src2_data_stream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/src2_data_stream_V_read">
+                  <obj_property name="ElementShortName">src2_data_stream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src2_data_stream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AddWeighted_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AddWeighted_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dst_data_stream_V_group">
+               <obj_property name="label">dst_data_stream_V(sobelImg_data_stream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/dst_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/dst_data_stream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/dst_data_stream_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/AddWeighted_U0/dst_data_stream_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="thresholding_U0_group">
+         <obj_property name="label">thresholding_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="thresholding_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="src_data_stream_V_group">
+               <obj_property name="label">src_data_stream_V(sobelImg_data_stream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/src_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/src_data_stream_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/src_data_stream_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/src_data_stream_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="threshold_group">
+               <obj_property name="label">threshold(threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/threshold_blk_n">
+                  <obj_property name="ElementShortName">threshold_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">threshold_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/threshold_dout">
+                  <obj_property name="ElementShortName">threshold_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">threshold_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/threshold_empty_n">
+                  <obj_property name="ElementShortName">threshold_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">threshold_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/threshold_read">
+                  <obj_property name="ElementShortName">threshold_read</obj_property>
+                  <obj_property name="ObjectShortName">threshold_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="thresholding_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="thresholding_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dst_data_stream_V_group">
+               <obj_property name="label">dst_data_stream_V(thresholdImg_data_st_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/dst_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/dst_data_stream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/dst_data_stream_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/thresholding_U0/dst_data_stream_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="CvtColor_1_U0_group">
+         <obj_property name="label">CvtColor_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="CvtColor_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_src_data_stream_V_group">
+               <obj_property name="label">p_src_data_stream_V(thresholdImg_data_st_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_src_data_stream_V_blk_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_src_data_stream_V_dout">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_src_data_stream_V_empty_n">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_src_data_stream_V_read">
+                  <obj_property name="ElementShortName">p_src_data_stream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">p_src_data_stream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="CvtColor_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="CvtColor_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_dst_data_stream_0_V_group">
+               <obj_property name="label">p_dst_data_stream_0_V(rgbSobel_data_stream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_0_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_0_V_full_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_0_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_0_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_0_V_write">
+                  <obj_property name="ElementShortName">p_dst_data_stream_0_V_write</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_0_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_dst_data_stream_1_V_group">
+               <obj_property name="label">p_dst_data_stream_1_V(rgbSobel_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_1_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_1_V_full_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_1_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_1_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_1_V_write">
+                  <obj_property name="ElementShortName">p_dst_data_stream_1_V_write</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_1_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_dst_data_stream_2_V_group">
+               <obj_property name="label">p_dst_data_stream_2_V(rgbSobel_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_2_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_2_V_full_n">
+                  <obj_property name="ElementShortName">p_dst_data_stream_2_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_2_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/CvtColor_1_U0/p_dst_data_stream_2_V_write">
+                  <obj_property name="ElementShortName">p_dst_data_stream_2_V_write</obj_property>
+                  <obj_property name="ObjectShortName">p_dst_data_stream_2_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Mat2AXIvideo_U0_group">
+         <obj_property name="label">Mat2AXIvideo_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Mat2AXIvideo_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_data_stream_0_V_group">
+               <obj_property name="label">img_data_stream_0_V(rgbSobel_data_stream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_0_V_dout">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_0_V_empty_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_0_V_read">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_1_V_group">
+               <obj_property name="label">img_data_stream_1_V(rgbSobel_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_1_V_dout">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_1_V_empty_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_1_V_read">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_2_V_group">
+               <obj_property name="label">img_data_stream_2_V(rgbSobel_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_2_V_dout">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_2_V_empty_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/img_data_stream_2_V_read">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Mat2AXIvideo_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_edge_detector_top/AESL_inst_edge_detector/Mat2AXIvideo_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Mat2AXIvideo_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

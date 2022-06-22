@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../../ov5640_single.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk_S00_AXI.vhd" \
+"../../../../ov5640_single.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk.vhd" \
+"../../../bd/system/ip/system_axi_dynclk_0_0/sim/system_axi_dynclk_0_0.vhd" \
+"../../../bd/system/ip/system_axi_vdma_0_0/sim/system_axi_vdma_0_0.vhd" \
+"../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
+"../../../bd/system/ip/system_rst_processing_system7_0_100M_0/sim/system_rst_processing_system7_0_100M_0.vhd" \
+"../../../bd/system/ip/system_rst_processing_system7_0_150M_0/sim/system_rst_processing_system7_0_150M_0.vhd" \
+"../../../bd/system/ip/system_v_tc_0_0/sim/system_v_tc_0_0.vhd" \
+"../../../bd/system/ip/system_axi_gpio_0_1/sim/system_axi_gpio_0_1.vhd" \
+"../../../../ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fadd_5_full_dsp_32.vhd" \
+"../../../../ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fmul_2_max_dsp_32.vhd" \
+"../../../../ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fpext_0_no_dsp_32.vhd" \
+"../../../../ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_uitofp_4_no_dsp_32.vhd" \
+"../../../bd/system/ip/system_edge_detector_0_0/sim/system_edge_detector_0_0.vhd" \
+"../../../bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../bd/system/ip/system_util_ds_buf_0_0/sim/system_util_ds_buf_0_0.vhd" \
+"../../../bd/system/ip/system_util_ds_buf_1_0/sim/system_util_ds_buf_1_0.vhd" \
+
+nosort

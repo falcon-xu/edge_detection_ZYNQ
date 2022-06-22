@@ -1,0 +1,147 @@
+INFO-FLOW: Workspace E:/vivado/hls_lab/stream2mem/solution1 opened at Sat Jul 13 11:23:22 +0800 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib E:/vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Command         ap_source done; 0.13 sec.
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Command       ap_source done; 0.245 sec.
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Command       ap_source done; 0.146 sec.
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.487 sec.
+Execute     source E:/vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.211 sec.
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.415 sec.
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.458 sec.
+Command     ap_source done; 0.464 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib E:/vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source E:/vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source E:/vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source E:/vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-2 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+Execute       get_default_platform 
+Command     set_part done; 0.129 sec.
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed medium 
+Command   open_solution done; 1.383 sec.
+Execute   set_part xc7z020clg400-2 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'stream2mem/stream2mem.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling stream2mem/stream2mem.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted stream2mem/stream2mem.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "E:/vivado/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "stream2mem/stream2mem.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/vivado/Vivado/2018.3/common/technology/autopilot" -I "E:/vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/stream2mem.pp.0.cpp" 
+INFO-FLOW: exec E:/vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain E:/vivado/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E stream2mem/stream2mem.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/vivado/Vivado/2018.3/common/technology/autopilot -I E:/vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/stream2mem.pp.0.cpp
+Command       clang done; 4.965 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/stream2mem.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec E:/vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/stream2mem.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.427 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/stream2mem.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "E:/vivado/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/vivado/Vivado/2018.3/common/technology/autopilot" -I "E:/vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/stream2mem.pp.0.cpp"  -o "E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec E:/vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain E:/vivado/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/vivado/Vivado/2018.3/common/technology/autopilot -I E:/vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/stream2mem.pp.0.cpp -o E:/vivado/hls_lab/stream2mem/solution1/.autopilot/db/useless.bc
+ERROR: [HLS 200-70] Compilation errors found: In file included from stream2mem/stream2mem.cpp:1:
+stream2mem/stream2mem.cpp:17:3: error: use of undeclared identifier 'memcpy'
+  memcpy(pMemPort+to, from, len);
+  ^
+1 error generated.
+Command       clang done; error code: 2; 6.102 sec.
+Command     elaborate done; error code: 2; 13.548 sec.
+Command   csynth_design done; error code: 2; 13.617 sec.
+Command ap_source done; error code: 1; 15.176 sec.
+Execute cleanup_all 

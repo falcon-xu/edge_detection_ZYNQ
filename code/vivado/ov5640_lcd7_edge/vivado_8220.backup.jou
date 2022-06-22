@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug  5 16:45:42 2019
+# Process ID: 8220
+# Current directory: E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26388 E:\vivado\vivado_lab\ZYNQ\ov5640_lcd7_edge\ov5640_single.xpr
+# Log file: E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/vivado.log
+# Journal file: E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/system.bd}
+connect_bd_net [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins processing_system7_0_axi_periph/M03_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins processing_system7_0_axi_periph/M06_ACLK] [get_bd_pins util_ds_buf_1/BUFG_O]
+connect_bd_net [get_bd_pins processing_system7_0_axi_periph/M06_ARESETN] [get_bd_pins rst_processing_system7_0_150M/peripheral_aresetn]
+save_bd_design
+validate_bd_design
+assign_bd_address [get_bd_addr_segs {edge_detector_0/s_axi_AXILiteS/Reg }]
+open_bd_design {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/system.bd}
+validate_bd_design
+generate_target all [get_files  E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 {system_xbar_1_synth_1 system_edge_detector_0_0_synth_1 system_util_ds_buf_0_0_synth_1 system_util_ds_buf_1_0_synth_1 system_auto_pc_0_synth_1 system_auto_pc_1_synth_1 system_auto_cc_0_synth_1}
+export_simulation -of_objects [get_files E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/system.bd] -directory E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.ip_user_files/sim_scripts -ip_user_files_dir E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.ip_user_files -ipstatic_source_dir E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.cache/compile_simlib/modelsim} {questa=E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.cache/compile_simlib/questa} {riviera=E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.cache/compile_simlib/riviera} {activehdl=E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/alinx_ov5640_0/inst/ila.ila_0_m0"}]]
+set_property PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+file copy -force E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.sysdef E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.sdk/system_wrapper.hdf
+
+launch_sdk -workspace E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.sdk -hwspec E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.sdk/system_wrapper.hdf
+file copy -force E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.sysdef E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.sdk/system_wrapper.hdf
+
+set_property PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+file copy -force E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.sysdef E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.sdk/system_wrapper.hdf
+
+launch_sdk -workspace E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.sdk -hwspec E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.sdk/system_wrapper.hdf
+set_property PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'edge_detector'" level="0">
+<item name = "Date">Fri Jul 12 17:42:42 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">edge_detector</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z015clg485-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.67, 7.656, 0.83</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">4149648, 4149648, 2108162, 2108162, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_AddWeighted_fu_456">AddWeighted, 2108161, 2108161, 2108161, 2108161, none</column>
+<column name="grp_Filter2D102_fu_463">Filter2D102, 2086097, 2086097, 2086097, 2086097, none</column>
+<column name="grp_Filter2D_fu_469">Filter2D, 2087179, 2087179, 2087179, 2087179, none</column>
+<column name="grp_AXIvideo2Mat_fu_475">AXIvideo2Mat, 3, 2079003, 3, 2079003, none</column>
+<column name="grp_CvtColor_fu_500">CvtColor, 1, 2081161, 1, 2081161, none</column>
+<column name="grp_Mat2AXIvideo_fu_510">Mat2AXIvideo, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="grp_thresholding_fu_531">thresholding, 2073603, 2073603, 2073603, 2073603, none</column>
+<column name="grp_CvtColor_1_fu_538">CvtColor_1, 2076841, 2076841, 2076841, 2076841, none</column>
+<column name="grp_Duplicate_fu_546">Duplicate, 2076841, 2076841, 2076841, 2076841, none</column>
+<column name="StgValue_38_Block_proc232_fu_553">Block_proc232, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vivado HLS Report for 'thresholding'
+================================================================
+* Date:           Fri Jul 12 17:42:49 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        edge_detector
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.67|     5.043|        0.83|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  2073603|  2073603|  2073603|  2073603|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |          |      Latency      | Iteration|  Initiation Interval  |   Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- Loop 1  |  2073601|  2073601|         3|          1|          1|  2073600|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|     58|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     27|
+|Register         |        -|      -|     48|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|     48|     85|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |indvar_flatten_next_fu_132_p2     |     +    |      0|  0|  21|          21|           1|
+    |ap_block_state3_pp0_stage0_iter1  |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state4_pp0_stage0_iter2  |    and   |      0|  0|   1|           1|           1|
+    |exitcond_flatten_fu_126_p2        |   icmp   |      0|  0|   9|          21|          16|
+    |tmp_i_fu_120_p2                   |   icmp   |      0|  0|   4|           8|           1|
+    |ult_fu_138_p2                     |   icmp   |      0|  0|   4|           8|           8|
+    |ap_block_pp0_stage0_01001         |    or    |      0|  0|   1|           1|           1|
+    |ap_block_state1                   |    or    |      0|  0|   1|           1|           1|
+    |storemerge_cast_i_fu_149_p3       |  select  |      0|  0|   2|           1|           2|
+    |tmp_1_fu_157_p3                   |  select  |      0|  0|   8|           1|           8|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    |rev2_fu_143_p2                    |    xor   |      0|  0|   2|           1|           2|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  58|          68|          45|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |   3|          4|    1|          4|
+    |ap_done                  |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   3|          2|    1|          2|
+    |dst_data_stream_V_blk_n  |   3|          2|    1|          2|
+    |indvar_flatten_reg_109   |   3|          2|   21|         42|
+    |real_start               |   3|          2|    1|          2|
+    |src_data_stream_V_blk_n  |   3|          2|    1|          2|
+    |threshold_blk_n          |   3|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  27|         20|   29|         60|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+----+----+-----+-----------+
+    |                  Name                  | FF | LUT| Bits| Const Bits|
+    +----------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                               |   3|   0|    3|          0|
+    |ap_done_reg                             |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0                 |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                 |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                 |   1|   0|    1|          0|
+    |exitcond_flatten_reg_174                |   1|   0|    1|          0|
+    |exitcond_flatten_reg_174_pp0_iter1_reg  |   1|   0|    1|          0|
+    |indvar_flatten_reg_109                  |  21|   0|   21|          0|
+    |start_once_reg                          |   1|   0|    1|          0|
+    |threshold_read_reg_164                  |   8|   0|    8|          0|
+    |tmp_1_reg_183                           |   8|   0|    8|          0|
+    |tmp_i_reg_169                           |   1|   0|    1|          0|
+    +----------------------------------------+----+----+-----+-----------+
+    |Total                                   |  48|   0|   48|          0|
+    +----------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+-------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++---------------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk                     |  in |    1| ap_ctrl_hs |    thresholding   | return value |
+|ap_rst                     |  in |    1| ap_ctrl_hs |    thresholding   | return value |
+|ap_start                   |  in |    1| ap_ctrl_hs |    thresholding   | return value |
+|start_full_n               |  in |    1| ap_ctrl_hs |    thresholding   | return value |
+|ap_done                    | out |    1| ap_ctrl_hs |    thresholding   | return value |
+|ap_continue                |  in |    1| ap_ctrl_hs |    thresholding   | return value |
+|ap_idle                    | out |    1| ap_ctrl_hs |    thresholding   | return value |
+|ap_ready                   | out |    1| ap_ctrl_hs |    thresholding   | return value |
+|start_out                  | out |    1| ap_ctrl_hs |    thresholding   | return value |
+|start_write                | out |    1| ap_ctrl_hs |    thresholding   | return value |
+|dst_data_stream_V_din      | out |    8|   ap_fifo  | dst_data_stream_V |    pointer   |
+|dst_data_stream_V_full_n   |  in |    1|   ap_fifo  | dst_data_stream_V |    pointer   |
+|dst_data_stream_V_write    | out |    1|   ap_fifo  | dst_data_stream_V |    pointer   |
+|src_data_stream_V_dout     |  in |    8|   ap_fifo  | src_data_stream_V |    pointer   |
+|src_data_stream_V_empty_n  |  in |    1|   ap_fifo  | src_data_stream_V |    pointer   |
+|src_data_stream_V_read     | out |    1|   ap_fifo  | src_data_stream_V |    pointer   |
+|threshold_dout             |  in |    8|   ap_fifo  |     threshold     |    pointer   |
+|threshold_empty_n          |  in |    1|   ap_fifo  |     threshold     |    pointer   |
+|threshold_read             | out |    1|   ap_fifo  |     threshold     |    pointer   |
++---------------------------+-----+-----+------------+-------------------+--------------+
+

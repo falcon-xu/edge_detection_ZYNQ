@@ -1,0 +1,185 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'edge_detector'" level="0">
+<item name = "Date">Fri Jul 12 17:42:52 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">edge_detector</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z015clg485-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">6.67</item>
+<item name = "Clock uncertainty (ns)">0.83</item>
+<item name = "Estimated clock period (ns)">7.656</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">4149648, 4149648, 2108162, 2108162, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="AddWeighted_U0">AddWeighted, 2108161, 2108161, 2108161, 2108161, none</column>
+<column name="Filter2D102_U0">Filter2D102, 2086097, 2086097, 2086097, 2086097, none</column>
+<column name="Filter2D_U0">Filter2D, 2087179, 2087179, 2087179, 2087179, none</column>
+<column name="AXIvideo2Mat_U0">AXIvideo2Mat, 3, 2079003, 3, 2079003, none</column>
+<column name="CvtColor_U0">CvtColor, 1, 2081161, 1, 2081161, none</column>
+<column name="Mat2AXIvideo_U0">Mat2AXIvideo, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="thresholding_U0">thresholding, 2073603, 2073603, 2073603, 2073603, none</column>
+<column name="CvtColor_1_U0">CvtColor_1, 2076841, 2076841, 2076841, 2076841, none</column>
+<column name="Duplicate_U0">Duplicate, 2076841, 2076841, 2076841, 2076841, none</column>
+<column name="Block_proc232_U0">Block_proc232, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 1</column>
+<column name="FIFO">0, -, 91, 377</column>
+<column name="Instance">6, 13, 4355, 5880</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, -, -</column>
+<specialColumn name="Available">200, 160, 93600, 46800</specialColumn>
+<specialColumn name="Utilization (%)">3, 8, 4, 13</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="AXIvideo2Mat_U0">AXIvideo2Mat, 0, 0, 391, 217</column>
+<column name="AddWeighted_U0">AddWeighted, 0, 10, 2629, 4066</column>
+<column name="Block_proc232_U0">Block_proc232, 0, 0, 3, 16</column>
+<column name="CvtColor_U0">CvtColor, 0, 3, 296, 163</column>
+<column name="CvtColor_1_U0">CvtColor_1, 0, 0, 42, 70</column>
+<column name="Duplicate_U0">Duplicate, 0, 0, 42, 67</column>
+<column name="Filter2D_U0">Filter2D, 3, 0, 368, 506</column>
+<column name="Filter2D102_U0">Filter2D102, 3, 0, 371, 516</column>
+<column name="Mat2AXIvideo_U0">Mat2AXIvideo, 0, 0, 121, 118</column>
+<column name="edge_detector_AXILiteS_s_axi_U">edge_detector_AXILiteS_s_axi, 0, 0, 44, 56</column>
+<column name="thresholding_U0">thresholding, 0, 0, 48, 85</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="grayImg_data_stream_s_U">0, 5, 20, 2, 8, 16</column>
+<column name="rgbSobel_data_stream_1_U">0, 5, 20, 2, 8, 16</column>
+<column name="rgbSobel_data_stream_2_U">0, 5, 20, 2, 8, 16</column>
+<column name="rgbSobel_data_stream_U">0, 5, 20, 2, 8, 16</column>
+<column name="sobelImg_data_stream_U">0, 5, 20, 2, 8, 16</column>
+<column name="sobelImg_x_data_stre_U">0, 5, 20, 2, 8, 16</column>
+<column name="sobelImg_y_data_stre_U">0, 5, 20, 2, 8, 16</column>
+<column name="split0_data_stream_0_U">0, 5, 20, 2, 8, 16</column>
+<column name="split1_data_stream_0_U">0, 5, 20, 2, 8, 16</column>
+<column name="srcImg_cols_V_c21_U">0, 5, 24, 2, 12, 24</column>
+<column name="srcImg_cols_V_c_U">0, 5, 24, 2, 12, 24</column>
+<column name="srcImg_data_stream_0_U">0, 5, 20, 2, 8, 16</column>
+<column name="srcImg_data_stream_1_U">0, 5, 20, 2, 8, 16</column>
+<column name="srcImg_data_stream_2_U">0, 5, 20, 2, 8, 16</column>
+<column name="srcImg_rows_V_c20_U">0, 5, 24, 2, 12, 24</column>
+<column name="srcImg_rows_V_c_U">0, 5, 24, 2, 12, 24</column>
+<column name="thresholdImg_data_st_U">0, 5, 20, 2, 8, 16</column>
+<column name="threshold_c_U">0, 6, 21, 7, 8, 56</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Duplicate_U0_start_full_n">and, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 5, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 5, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_none, edge_detector, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, edge_detector, return value</column>
+<column name="src_TDATA">in, 24, axis, src_V_data_V, pointer</column>
+<column name="src_TKEEP">in, 3, axis, src_V_keep_V, pointer</column>
+<column name="src_TSTRB">in, 3, axis, src_V_strb_V, pointer</column>
+<column name="src_TUSER">in, 1, axis, src_V_user_V, pointer</column>
+<column name="src_TLAST">in, 1, axis, src_V_last_V, pointer</column>
+<column name="src_TID">in, 1, axis, src_V_id_V, pointer</column>
+<column name="src_TDEST">in, 1, axis, src_V_dest_V, pointer</column>
+<column name="src_TVALID">in, 1, axis, src_V_dest_V, pointer</column>
+<column name="src_TREADY">out, 1, axis, src_V_dest_V, pointer</column>
+<column name="dst_TDATA">out, 24, axis, dst_V_data_V, pointer</column>
+<column name="dst_TKEEP">out, 3, axis, dst_V_keep_V, pointer</column>
+<column name="dst_TSTRB">out, 3, axis, dst_V_strb_V, pointer</column>
+<column name="dst_TUSER">out, 1, axis, dst_V_user_V, pointer</column>
+<column name="dst_TLAST">out, 1, axis, dst_V_last_V, pointer</column>
+<column name="dst_TID">out, 1, axis, dst_V_id_V, pointer</column>
+<column name="dst_TDEST">out, 1, axis, dst_V_dest_V, pointer</column>
+<column name="dst_TVALID">out, 1, axis, dst_V_dest_V, pointer</column>
+<column name="dst_TREADY">in, 1, axis, dst_V_dest_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">3.92</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'threshold'">read, 1.00, 1.00, -, -, -, s_axi, read, &apos;threshold&apos;, -, -, -, -, -</column>
+<column name="edge_detector/edge_detector.cpp:42">call, 2.92, 3.92, -, -, -, -, -, -, -, -, -, Block__proc232, -</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="edge_detector.cpp" path="E:\vivado\hls_lab\edge_detector\edge_detector.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="E:\vivado\hls_lab\edge_detector\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

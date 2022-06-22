@@ -1,0 +1,182 @@
+
+
+================================================================
+== Vivado HLS Report for 'thresholding'
+================================================================
+* Date:           Fri Jul 12 17:42:39 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        edge_detector
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.67|     5.043|        0.83|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  2073603|  2073603|  2073603|  2073603|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |          |      Latency      | Iteration|  Initiation Interval  |   Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- Loop 1  |  2073601|  2073601|         3|          1|          1|  2073600|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	5  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
+3 --> 
+	4  / true
+4 --> 
+	2  / true
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.23>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %dst_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str212, i32 0, i32 0, [1 x i8]* @p_str213, [1 x i8]* @p_str214, [1 x i8]* @p_str215, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str216, [1 x i8]* @p_str217)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %src_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str205, i32 0, i32 0, [1 x i8]* @p_str206, [1 x i8]* @p_str207, [1 x i8]* @p_str208, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str209, [1 x i8]* @p_str210)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %threshold, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str319, i32 0, i32 0, [1 x i8]* @p_str320, [1 x i8]* @p_str321, [1 x i8]* @p_str322, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str323, [11 x i8]* @ScalarProp_str)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (2.91ns)   --->   "%threshold_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %threshold)"   --->   Operation 9 'read' 'threshold_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (1.31ns)   --->   "%tmp_i = icmp eq i8 %threshold_read, 0" [edge_detector/edge_detector.cpp:22]   --->   Operation 10 'icmp' 'tmp_i' <Predicate = true> <Delay = 1.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.46ns)   --->   "br label %.preheader.i" [edge_detector/edge_detector.cpp:16]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 2.02>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i21 [ 0, %entry ], [ %indvar_flatten_next, %.preheader.i.preheader ]"   --->   Operation 12 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (2.02ns)   --->   "%exitcond_flatten = icmp eq i21 %indvar_flatten, -23552"   --->   Operation 13 'icmp' 'exitcond_flatten' <Predicate = true> <Delay = 2.02> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (1.60ns)   --->   "%indvar_flatten_next = add i21 %indvar_flatten, 1"   --->   Operation 14 'add' 'indvar_flatten_next' <Predicate = true> <Delay = 1.60> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.60> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %.exit, label %.preheader.i.preheader"   --->   Operation 15 'br' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.04>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_6_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str50)" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:672->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->edge_detector/edge_detector.cpp:21]   --->   Operation 16 'specregionbegin' 'tmp_6_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str1) nounwind" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:676->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->edge_detector/edge_detector.cpp:21]   --->   Operation 17 'specprotocol' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (2.91ns)   --->   "%tmp = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %src_data_stream_V)" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->edge_detector/edge_detector.cpp:21]   --->   Operation 18 'read' 'tmp' <Predicate = (!exitcond_flatten)> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str50, i32 %tmp_6_i)" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:681->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->edge_detector/edge_detector.cpp:21]   --->   Operation 19 'specregionend' 'empty' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (1.31ns)   --->   "%ult = icmp ult i8 %threshold_read, %tmp" [edge_detector/edge_detector.cpp:28]   --->   Operation 20 'icmp' 'ult' <Predicate = (!exitcond_flatten & !tmp_i)> <Delay = 1.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node tmp_1)   --->   "%rev2 = xor i1 %ult, true" [edge_detector/edge_detector.cpp:28]   --->   Operation 21 'xor' 'rev2' <Predicate = (!exitcond_flatten & !tmp_i)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node tmp_1)   --->   "%storemerge_cast_i = select i1 %rev2, i8 -1, i8 0" [edge_detector/edge_detector.cpp:28]   --->   Operation 22 'select' 'storemerge_cast_i' <Predicate = (!exitcond_flatten & !tmp_i)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.81ns) (out node of the LUT)   --->   "%tmp_1 = select i1 %tmp_i, i8 %tmp, i8 %storemerge_cast_i" [edge_detector/edge_detector.cpp:28]   --->   Operation 23 'select' 'tmp_1' <Predicate = (!exitcond_flatten)> <Delay = 0.81> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.91>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_5_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str)" [edge_detector/edge_detector.cpp:19]   --->   Operation 24 'specregionbegin' 'tmp_5_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [edge_detector/edge_detector.cpp:20]   --->   Operation 25 'specpipeline' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_7_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str48)" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:696->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->edge_detector/edge_detector.cpp:37]   --->   Operation 26 'specregionbegin' 'tmp_7_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str1) nounwind" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:700->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->edge_detector/edge_detector.cpp:37]   --->   Operation 27 'specprotocol' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %dst_data_stream_V, i8 %tmp_1)" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->edge_detector/edge_detector.cpp:37]   --->   Operation 28 'write' <Predicate = (!exitcond_flatten)> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%empty_17 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str48, i32 %tmp_7_i)" [E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:705->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->edge_detector/edge_detector.cpp:37]   --->   Operation 29 'specregionend' 'empty_17' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%empty_18 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str, i32 %tmp_5_i)" [edge_detector/edge_detector.cpp:38]   --->   Operation 30 'specregionend' 'empty_18' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "br label %.preheader.i" [edge_detector/edge_detector.cpp:18]   --->   Operation 31 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 0.00>
+ST_5 : Operation 32 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 32 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.67ns, clock uncertainty: 0.833ns.
+
+ <State 1>: 4.23ns
+The critical path consists of the following:
+	fifo read on port 'threshold' [7]  (2.92 ns)
+	'icmp' operation ('tmp_i', edge_detector/edge_detector.cpp:22) [8]  (1.31 ns)
+
+ <State 2>: 2.03ns
+The critical path consists of the following:
+	'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [11]  (0 ns)
+	'icmp' operation ('exitcond_flatten') [12]  (2.03 ns)
+
+ <State 3>: 5.04ns
+The critical path consists of the following:
+	fifo read on port 'src_data_stream_V' (E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->edge_detector/edge_detector.cpp:21) [20]  (2.92 ns)
+	'icmp' operation ('ult', edge_detector/edge_detector.cpp:28) [22]  (1.31 ns)
+	'xor' operation ('rev2', edge_detector/edge_detector.cpp:28) [23]  (0 ns)
+	'select' operation ('storemerge_cast_i', edge_detector/edge_detector.cpp:28) [24]  (0 ns)
+	'select' operation ('tmp', edge_detector/edge_detector.cpp:28) [25]  (0.813 ns)
+
+ <State 4>: 2.92ns
+The critical path consists of the following:
+	fifo write on port 'dst_data_stream_V' (E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->E:/vivado/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->edge_detector/edge_detector.cpp:37) [28]  (2.92 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

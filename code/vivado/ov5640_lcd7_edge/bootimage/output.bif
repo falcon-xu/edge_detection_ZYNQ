@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\intel_project\AX7015\new\update\12_ov5640_single\ov5640_single.sdk\fsbl\Debug\fsbl.elf
+	D:\intel_project\AX7015\new\update\12_ov5640_single\ov5640_single.sdk\system_wrapper_hw_platform_0\system_wrapper.bit
+	D:\intel_project\AX7015\new\update\12_ov5640_single\ov5640_single.sdk\an5642_test\Debug\an5642_test.elf
+}

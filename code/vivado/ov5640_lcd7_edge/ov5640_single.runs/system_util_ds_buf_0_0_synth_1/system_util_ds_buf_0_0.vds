@@ -1,0 +1,345 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug  5 16:52:48 2019
+# Process ID: 2396
+# Current directory: E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_util_ds_buf_0_0_synth_1
+# Command line: vivado.exe -log system_util_ds_buf_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_util_ds_buf_0_0.tcl
+# Log file: E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_util_ds_buf_0_0_synth_1/system_util_ds_buf_0_0.vds
+# Journal file: E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_util_ds_buf_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_util_ds_buf_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/vivado/hls_lab/edge_detector'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 352.395 ; gain = 31.844
+Command: synth_design -top system_util_ds_buf_0_0 -part xc7z020clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14368 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 471.422 ; gain = 96.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_util_ds_buf_0_0' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/synth/system_util_ds_buf_0_0.vhd:63]
+	Parameter C_BUF_TYPE bound to: BUFG - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at 'e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:71' bound to instance 'U0' of component 'util_ds_buf' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/synth/system_util_ds_buf_0_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:129]
+	Parameter C_BUF_TYPE bound to: BUFG - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'BUFG_U' to cell 'BUFG' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:299]
+WARNING: [Synth 8-3848] Net IBUF_OUT in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:81]
+WARNING: [Synth 8-3848] Net IBUF_DS_ODIV2 in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:82]
+WARNING: [Synth 8-3848] Net OBUF_DS_P in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:86]
+WARNING: [Synth 8-3848] Net OBUF_DS_N in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:87]
+WARNING: [Synth 8-3848] Net IOBUF_IO_O in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:94]
+WARNING: [Synth 8-3848] Net BUFGCE_O in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:106]
+WARNING: [Synth 8-3848] Net BUFH_O in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:110]
+WARNING: [Synth 8-3848] Net BUFHCE_O in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:115]
+WARNING: [Synth 8-3848] Net BUFG_GT_O in module/entity util_ds_buf does not have driver. [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (1#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'system_util_ds_buf_0_0' (2#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/synth/system_util_ds_buf_0_0.vhd:63]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_OUT[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_ODIV2[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_DS_P[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_DS_N[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_DS_P[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_DS_N[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_IO[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_P[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_N[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_IN[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_T[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CEMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLR[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLRMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[2]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 528.320 ; gain = 153.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 528.320 ; gain = 153.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 528.320 ; gain = 153.781
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_util_ds_buf_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_util_ds_buf_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.398 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 796.965 ; gain = 1.566
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 796.965 ; gain = 422.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 796.965 ; gain = 422.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_util_ds_buf_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 796.965 ; gain = 422.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 796.965 ; gain = 422.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_OUT[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_ODIV2[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_DS_P[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_DS_N[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_DS_P[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_DS_N[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_IO[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_P[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_N[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_IN[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_T[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CEMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLR[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLRMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[2]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 796.965 ; gain = 422.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 849.969 ; gain = 475.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 849.969 ; gain = 475.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |     1|
+|2     |  U0     |util_ds_buf |     1|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 859.496 ; gain = 484.957
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 859.496 ; gain = 216.313
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 859.496 ; gain = 484.957
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 872.262 ; gain = 509.188
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.262 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_util_ds_buf_0_0_synth_1/system_util_ds_buf_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_util_ds_buf_0_0_utilization_synth.rpt -pb system_util_ds_buf_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  5 16:53:51 2019...

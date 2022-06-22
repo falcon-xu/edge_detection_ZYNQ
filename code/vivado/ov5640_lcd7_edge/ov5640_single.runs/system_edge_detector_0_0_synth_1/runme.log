@@ -1,0 +1,1410 @@
+
+*** Running vivado
+    with args -log system_edge_detector_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_edge_detector_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_edge_detector_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/vivado/hls_lab/edge_detector'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2018.3/data/ip'.
+Command: synth_design -top system_edge_detector_0_0 -part xc7z020clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 38444 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 477.160 ; gain = 102.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_edge_detector_0_0' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_edge_detector_0_0/synth/system_edge_detector_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector.v:12]
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_AXILiteS_s_axi' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_AXILiteS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_THRESHOLD_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_THRESHOLD_CTRL bound to: 5'b10100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_AXILiteS_s_axi.v:166]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_AXILiteS_s_axi' (1#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc232' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Block_proc232.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Block_proc232.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc232' (2#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Block_proc232.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AXIvideo2Mat.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (3#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/CvtColor.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state9 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/CvtColor.v:88]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_mulbkb' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_mulbkb.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 22 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_mulbkb_DSP48_0' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_mulbkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_mulbkb_DSP48_0' (4#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_mulbkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_mulbkb' (5#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_mulbkb.v:13]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_maccud' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_maccud.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_maccud_DSP48_1' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_maccud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_maccud_DSP48_1' (6#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_maccud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_maccud' (7#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_maccud.v:33]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_macdEe' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_macdEe.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 23 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_macdEe_DSP48_2' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_macdEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_macdEe_DSP48_2' (8#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_macdEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_macdEe' (9#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_macdEe.v:33]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/CvtColor.v:658]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor' (10#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/CvtColor.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Duplicate' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Duplicate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Duplicate.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Duplicate' (11#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Duplicate.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D102' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state8 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:60]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D102_k_bufeOg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102_k_bufeOg.v:53]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1920 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Filter2D102_k_bufeOg_ram' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102_k_bufeOg.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1920 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102_k_bufeOg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D102_k_bufeOg_ram' (12#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102_k_bufeOg.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D102_k_bufeOg' (13#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102_k_bufeOg.v:53]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_muxhbi' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_muxhbi.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_muxhbi' (14#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_muxhbi.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:998]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1000]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1002]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1044]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1046]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1048]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1050]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1076]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1078]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1080]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:1156]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D102' (15#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state9 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:52]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:964]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:966]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:968]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:1004]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:1012]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:1016]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:1018]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:1044]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:1046]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:1126]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D' (16#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AddWeighted' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state34 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:59]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_fadlbW' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_fadlbW.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'edge_detector_ap_fadd_5_full_dsp_32' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fadd_5_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 5 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fadd_5_full_dsp_32.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector_ap_fadd_5_full_dsp_32' (34#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fadd_5_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_fadlbW' (35#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_fadlbW.v:11]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_fmumb6' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_fmumb6.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'edge_detector_ap_fmul_2_max_dsp_32' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fmul_2_max_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fmul_2_max_dsp_32.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector_ap_fmul_2_max_dsp_32' (43#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_fmumb6' (44#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_fmumb6.v:11]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_uitncg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_uitncg.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'edge_detector_ap_uitofp_4_no_dsp_32' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_uitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_uitofp_4_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector_ap_uitofp_4_no_dsp_32' (53#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_uitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_uitncg' (54#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_uitncg.v:11]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_fpeocq' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_fpeocq.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'edge_detector_ap_fpext_0_no_dsp_32' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fpext_0_no_dsp_32.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fpext_0_no_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector_ap_fpext_0_no_dsp_32' (57#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/ip/edge_detector_ap_fpext_0_no_dsp_32.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_fpeocq' (58#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector_fpeocq.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1176]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1184]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1190]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1196]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1300]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1302]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1346]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1350]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1354]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1356]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1366]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1390]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1392]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1402]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1410]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1422]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1424]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1438]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:1514]
+INFO: [Synth 8-6155] done synthesizing module 'AddWeighted' (59#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/AddWeighted.v:10]
+INFO: [Synth 8-6157] synthesizing module 'thresholding' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/thresholding.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state5 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/thresholding.v:66]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/thresholding.v:390]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/thresholding.v:392]
+INFO: [Synth 8-6155] done synthesizing module 'thresholding' (60#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/thresholding.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor_1' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/CvtColor_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/CvtColor_1.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor_1' (61#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/CvtColor_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Mat2AXIvideo.v:77]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Mat2AXIvideo.v:256]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Mat2AXIvideo.v:282]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Mat2AXIvideo.v:308]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Mat2AXIvideo.v:370]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (62#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d2_A' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w12_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d2_A_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w12_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d2_A_shiftReg' (63#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w12_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d2_A' (64#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w12_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d7_A' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d7_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d7_A_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d7_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d7_A_shiftReg' (65#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d7_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d7_A' (66#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d7_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (67#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (68#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_threshopcA' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_threshopcA.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6157] synthesizing module 'start_for_threshopcA_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_threshopcA.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_threshopcA_shiftReg' (69#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_threshopcA.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_threshopcA' (70#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_threshopcA.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoqcK' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColoqcK.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoqcK_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColoqcK.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoqcK_shiftReg' (71#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColoqcK.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoqcK' (72#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColoqcK.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_DuplicarcU' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_DuplicarcU.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_DuplicarcU_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_DuplicarcU.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_DuplicarcU_shiftReg' (73#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_DuplicarcU.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_DuplicarcU' (74#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_DuplicarcU.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2sc4' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2sc4.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2sc4_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2sc4.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2sc4_shiftReg' (75#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2sc4.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2sc4' (76#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2sc4.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2tde' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2tde.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2tde_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2tde.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2tde_shiftReg' (77#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2tde.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2tde' (78#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Filter2tde.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_AddWeigudo' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_AddWeigudo.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_AddWeigudo_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_AddWeigudo.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_AddWeigudo_shiftReg' (79#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_AddWeigudo.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_AddWeigudo' (80#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_AddWeigudo.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColovdy' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColovdy.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColovdy_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColovdy.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColovdy_shiftReg' (81#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColovdy.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColovdy' (82#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_CvtColovdy.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIwdI' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Mat2AXIwdI.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIwdI_shiftReg' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Mat2AXIwdI.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIwdI_shiftReg' (83#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Mat2AXIwdI.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIwdI' (84#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_Mat2AXIwdI.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (85#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/edge_detector.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'system_edge_detector_0_0' (86#1) [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_edge_detector_0_0/synth/system_edge_detector_0_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized94 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized94 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized94 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized94 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized94 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized89 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized2 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design special_detect__parameterized1 has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized92 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized92 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized92 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized92 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized92 has unconnected port SINIT
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port m_axis_result_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port m_axis_result_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port aclken
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port aresetn
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_a_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_a_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tvalid
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[31]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[30]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[29]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[28]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[27]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[26]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[25]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[24]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[23]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[22]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[21]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[20]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[19]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[18]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[17]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[16]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[15]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[14]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[13]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[12]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[11]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[10]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[9]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[8]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[7]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[6]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[5]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[4]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[3]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[2]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[1]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tdata[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_b_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_c_tvalid
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_c_tdata[31]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_c_tdata[30]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_c_tdata[29]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_c_tdata[28]
+WARNING: [Synth 8-3331] design floating_point_v7_1_7_viv__parameterized5 has unconnected port s_axis_c_tdata[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 638.133 ; gain = 263.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 638.133 ; gain = 263.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 638.133 ; gain = 263.922
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 770 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_edge_detector_0_0/constraints/edge_detector_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ip/system_edge_detector_0_0/constraints/edge_detector_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_edge_detector_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_edge_detector_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 945.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  FDE => FDRE: 38 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 947.363 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.204 . Memory (MB): peak = 948.742 ; gain = 3.461
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 948.742 ; gain = 574.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 948.742 ; gain = 574.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_edge_detector_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 948.742 ; gain = 574.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'edge_detector_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'edge_detector_AXILiteS_s_axi'
+INFO: [Synth 8-5546] ROM "rdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond3_fu_136_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_148_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_1086_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1080_reg[10:0]' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:577]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_1092_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1080_reg[10:0]' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D102.v:578]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_282_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond460_i_fu_360_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_142_1_fu_328_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_fu_322_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_1044_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1038_reg[10:0]' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:554]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_1050_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1038_reg[10:0]' [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/Filter2D.v:555]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_272_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond460_i_fu_344_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_142_1_fu_318_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_17_fu_312_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_i_fu_233_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_245_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_fu_367_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_5_i_fu_315_p2" won't be mapped to RAM because address size (63) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_9_i_fu_346_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Range1_all_zeros_1_fu_606_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_i_i_i_i_fu_404_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_28_i_fu_769_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond1_i_fu_233_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_245_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_fu_367_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_5_i_fu_315_p2" won't be mapped to RAM because address size (63) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_9_i_fu_346_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Range1_all_zeros_1_fu_606_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_i_i_i_i_fu_404_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_28_i_fu_769_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_126_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i_fu_120_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_160_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_172_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond2_fu_200_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_212_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_224_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/fifo_w8_d7_A.v:92]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.srcs/sources_1/bd/system/ipshared/120e/hdl/verilog/start_for_threshopcA.v:92]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'edge_detector_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'edge_detector_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 948.742 ; gain = 574.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'edge_detector_fadlbW:/edge_detector_ap_fadd_5_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'edge_detector_fadlbW:/edge_detector_ap_fadd_5_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_fadlbW:/edge_detector_ap_fadd_5_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'edge_detector_fadlbW:/edge_detector_ap_fadd_5_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_fmumb6:/edge_detector_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'edge_detector_fmumb6:/edge_detector_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_fmumb6:/edge_detector_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'edge_detector_fmumb6:/edge_detector_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized29) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized29) to 'edge_detector_uitncg:/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/AddWeighted_U0/edge_detector_fpeocq_U57/edge_detector_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/AddWeighted_U0/edge_detector_fpeocq_U57/edge_detector_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/AddWeighted_U0/edge_detector_fpeocq_U57/edge_detector_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/AddWeighted_U0/edge_detector_fpeocq_U57/edge_detector_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/AddWeighted_U0/edge_detector_fpeocq_U57/edge_detector_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/AddWeighted_U0/edge_detector_fpeocq_U57/edge_detector_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "rdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_fu_136_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_148_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond460_i_fu_360_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_282_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_142_1_fu_328_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_fu_322_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond460_i_fu_344_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_272_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_17_fu_312_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_142_1_fu_318_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "FLT_TO_FLT_OP.SPD.OP/EXP/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FLT_OP.SPD.OP/EXP/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_245_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_i_fu_233_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i_i_i_i_fu_404_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_5_i_fu_315_p2" won't be mapped to RAM because address size (63) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_9_i_fu_346_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_fu_367_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_28_i_fu_769_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Range1_all_zeros_1_fu_606_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_126_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i_fu_120_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_172_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_160_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_212_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_200_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_224_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/NEED_Z_DET.Z_DET/ENCODE[1].DIST_OVER_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U55/edge_detector_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/NEED_Z_DET.Z_DET/ENCODE[1].DIST_OVER_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_uitncg_U55/edge_detector_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/NEED_Z_DET.Z_DET/ENCODE[1].DIST_OVER_DEL/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[31]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[28]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[29]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[30]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[27]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[24]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[25]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[26]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[23]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[20]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[21]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[22]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[19]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[16]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[17]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[18]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[15]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[12]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[13]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[14]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[11]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[8]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[9]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/din0_buf1_reg[10]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_uitncg_U56/edge_detector_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/NEED_Z_DET.Z_DET/ENCODE[1].DIST_OVER_DEL/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[31]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[28]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[29]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[30]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[27]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[24]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[25]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[26]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[23]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[20]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[21]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[22]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[19]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[16]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[17]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[18]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[15]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[12]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[13]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[14]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[11]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[8]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[9]' (FDE) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/din0_buf1_reg[10]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[31]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[31]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U55/ce_r_reg' (FD) to 'inst/AddWeighted_U0/edge_detector_uitncg_U56/ce_r_reg'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_uitncg_U56/ce_r_reg' (FD) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/ce_r_reg'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[23]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[24]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[25]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[26]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[27]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[28]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[29]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[30]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[23]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[24]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[25]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[26]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[27]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[28]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[29]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AddWeighted_U0/\edge_detector_fmumb6_U54/din1_buf1_reg[29] )
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[30]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[0]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[1]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[2]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[3]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[4]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[5]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[6]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[7]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[8]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[9]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[10]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[11]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[12]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[13]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[14]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[15]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[16]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[17]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[18]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[19]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[20]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[21]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U53/din1_buf1_reg[22]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[0]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[1]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[2]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[3]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[4]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[5]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[6]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[7]' (FDE) to 'inst/AddWeighted_U0/edge_detector_fmumb6_U54/din1_buf1_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_fadlbW_U52/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_61_reg_1036_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D102_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AddWeighted_U0/\p_Result_8_reg_1061_reg[52] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AddWeighted_U0/\man_V_1_reg_1066_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\p_Result_8_reg_1061_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D_U0/\tmp_45_reg_1069_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Duplicate_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_27_i_reg_1198_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/thresholding_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_1_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_proc232_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_proc232_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Mat2AXIvideo_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/edge_detector_AXILiteS_s_axi_U/\rdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_uitncg_U56/edge_detector_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_uitncg_U55/edge_detector_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_fadlbW_U52/edge_detector_ap_fadd_5_full_dsp_32_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\p_Result_8_reg_1061_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_uitncg_U56/edge_detector_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\edge_detector_uitncg_U55/edge_detector_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module edge_detector_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module edge_detector_AXILiteS_s_axi.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_cols_V_c21_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_cols_V_c21_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_rows_V_c20_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_rows_V_c20_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AXIvideo2Mat_U0/\cols_V_reg_470_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/\cols_V_reg_470_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_rows_V_c20_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_rows_V_c20_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/srcImg_cols_V_c21_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/srcImg_cols_V_c21_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/CvtColor_U0/\p_src_cols_V_read_reg_344_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\p_src_cols_V_read_reg_344_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\man_V_1_reg_1066_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\tmp_65_reg_1138_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:44 . Memory (MB): peak = 948.742 ; gain = 574.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D102_U0/i_2_0/k_buf_0_val_3_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D102_U0/i_2_1/k_buf_0_val_4_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D102_U0/i_2_2/k_buf_0_val_5_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D_U0/i_2_0/k_buf_0_val_3_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D_U0/i_2_1/k_buf_0_val_4_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D_U0/i_2_3/k_buf_0_val_5_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1017.078 ; gain = 642.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1048.934 ; gain = 674.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D102_U0/k_buf_0_val_3_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D102_U0/k_buf_0_val_4_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D102_U0/k_buf_0_val_5_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D_U0/k_buf_0_val_3_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D_U0/k_buf_0_val_4_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Filter2D_U0/k_buf_0_val_5_U/Filter2D102_k_bufeOg_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:19 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:10 ; elapsed = 00:02:21 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:10 ; elapsed = 00:02:21 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:11 ; elapsed = 00:02:22 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:11 ; elapsed = 00:02:23 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   100|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     2|
+|5     |DSP48E1_4 |     2|
+|6     |DSP48E1_5 |     2|
+|7     |DSP48E1_6 |     2|
+|8     |DSP48E1_7 |     2|
+|9     |DSP48E1_8 |     1|
+|10    |LUT1      |   163|
+|11    |LUT2      |   323|
+|12    |LUT3      |   678|
+|13    |LUT4      |   564|
+|14    |LUT5      |   494|
+|15    |LUT6      |  1176|
+|16    |MUXCY     |   482|
+|17    |MUXF7     |    10|
+|18    |RAMB18E1  |     6|
+|19    |SRL16E    |    12|
+|20    |XORCY     |   226|
+|21    |FDE       |    38|
+|22    |FDRE      |  3239|
+|23    |FDSE      |    97|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 1083.871 ; gain = 709.660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 380 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:27 ; elapsed = 00:02:06 . Memory (MB): peak = 1083.871 ; gain = 399.051
+Synthesis Optimization Complete : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 1083.871 ; gain = 709.660
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 875 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1083.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 163 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 125 instances
+  FDE => FDRE: 38 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+518 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:02:30 . Memory (MB): peak = 1083.871 ; gain = 721.129
+INFO: [Coretcl 2-1174] Renamed 387 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1083.871 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/vivado/vivado_lab/ZYNQ/ov5640_lcd7_edge/ov5640_single.runs/system_edge_detector_0_0_synth_1/system_edge_detector_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_edge_detector_0_0_utilization_synth.rpt -pb system_edge_detector_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  5 16:54:20 2019...
